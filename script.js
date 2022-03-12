@@ -1,21 +1,13 @@
+let arrThree = ['Aleksey', 'Kartoshka', 'Margarin', 'Morgenshtern', 'Monica'] 
 
-let arr = [1,2,false,'hello',24,'world',undefined,null,'error',22];
+let length = arrThree.length;
 
+let index = prompt();
 
-let filtered = arr.filter(item => typeof item === 'number')
-console.log(filtered);
+arrThree.splice(index, 1)
 
-let str = arr.filter(item => typeof item === 'string')
-console.log(str);
-
-let bool = arr.filter(item => typeof item === 'boolean')
-console.log(bool);
-
-let obj = arr.filter(item => typeof item === 'object')
-
-console.log(obj);
-
-let find = arr.filter(item => typeof item === 'underfined')
-
-console.log(find );
-
+if (length == arrThree.length){
+    console.log('Такого элемента нет')
+} else if (arrThree.splice) {
+    console.log(arrThree)
+}
